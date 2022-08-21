@@ -24,6 +24,12 @@ class script(object):
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+    OWNER_TXT = """<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟</b>
+    
+<b>• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴍᴀɢɴᴜs ᴛɢ</b>
+<b>• Uꜱᴇʀ ɴᴀᴍᴇ : @MagnusTG</b>
+
+<b>ᴅᴏɴ'ᴛ ʙᴇ ᴀғʀᴀɪᴅ ᴏғ ʙᴇɪɴɢ ᴅɪғғᴇʀᴇɴᴛ, ʙᴇ ᴀғʀᴀɪᴅ ᴏғ ʙᴇɪɴɢ ᴛʜᴇ sᴀᴍᴇ ᴀs ᴇᴠᴇʀʏ ᴏɴᴇ ᴇʟsᴇ</b>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
 - Eva Maria Supports both url and alert inline buttons.
@@ -58,12 +64,6 @@ class script(object):
 • /connect  - <code>connect a particular chat to your PM</code>
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
-    OWNER_TXT = """<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟</b>
-    
-<b>• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴍᴀɢɴᴜs ᴛɢ</b>
-<b>• Uꜱᴇʀ ɴᴀᴍᴇ : @MagnusTG</b>
-
-<b>ᴅᴏɴ'ᴛ ʙᴇ ᴀғʀᴀɪᴅ ᴏғ ʙᴇɪɴɢ ᴅɪғғᴇʀᴇɴᴛ, ʙᴇ ᴀғʀᴀɪᴅ ᴏғ ʙᴇɪɴɢ ᴛʜᴇ sᴀᴍᴇ ᴀs ᴇᴠᴇʀʏ ᴏɴᴇ ᴇʟsᴇ</b>"""
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
