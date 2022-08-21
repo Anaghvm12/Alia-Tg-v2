@@ -58,6 +58,12 @@ class script(object):
 • /connect  - <code>connect a particular chat to your PM</code>
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
+    OWNER_TXT = """<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟</b>
+    
+<b>• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴍᴀɢɴᴜs ᴛɢ</b>
+<b>• Uꜱᴇʀ ɴᴀᴍᴇ : @MagnusTG</b>
+
+<b>ᴅᴏɴ'ᴛ ʙᴇ ᴀғʀᴀɪᴅ ᴏғ ʙᴇɪɴɢ ᴅɪғғᴇʀᴇɴᴛ, ʙᴇ ᴀғʀᴀɪᴅ ᴏғ ʙᴇɪɴɢ ᴛʜᴇ sᴀᴍᴇ ᴀs ᴇᴠᴇʀʏ ᴏɴᴇ ᴇʟsᴇ</b>"""
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
