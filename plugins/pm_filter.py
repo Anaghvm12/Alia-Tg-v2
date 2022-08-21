@@ -435,7 +435,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚙️ ʜᴇʟᴩ', callback_data='help'),
             InlineKeyboardButton('🔰 ᴀʙᴏᴜᴛ', callback_data='about')           
             ],[
-            InlineKeyboardButton('ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs ʙᴜᴛᴛᴏɴs', callback_data='mtg')
+            InlineKeyboardButton('ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs ʙᴜᴛᴛᴏɴs', callback_data='start')
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -463,7 +463,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='mtg'),
             InlineKeyboardButton('ᴄʟᴏsᴇ ⛔', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -516,7 +516,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner":
         buttons = [[
             InlineKeyboardButton('👥 ᴄᴏɴᴛᴀᴄᴛ', callback_data='contact'),
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='mtg')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -547,7 +547,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='mtg'),
             InlineKeyboardButton('♻️ ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -566,7 +566,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='mtg'),
             InlineKeyboardButton('♻️ ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
