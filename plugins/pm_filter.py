@@ -602,7 +602,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ғɪʟᴛᴇʀ ʙᴜᴛᴛᴏɴ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('Single' if settings["button"] else 'Double',
+                    InlineKeyboardButton('sɪɴɢʟᴇ' if settings["button"] else 'ᴅᴏᴜʙʟᴇ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
