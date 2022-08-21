@@ -639,7 +639,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('ᴘᴇʟʟ ᴄʜᴇᴄᴋs',
+                    InlineKeyboardButton('sᴘᴇʟʟ ᴄʜᴇᴄᴋ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
                     InlineKeyboardButton('✅ ʏᴇs' if settings["spell_check"] else '❌ ɴᴏ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
