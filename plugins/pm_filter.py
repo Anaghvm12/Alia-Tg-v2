@@ -501,6 +501,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "owner":
+        buttons = [[
+            InlineKeyboardButton('👥 ᴄᴏɴᴛᴀᴄᴛ', callback_data='contact'),
+            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.OWNER_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('⬅️ ʙᴀᴄᴋ', callback_data='help'),
@@ -612,7 +623,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('Piracy Is Crime')
+    elif query.data == "close":
+        await query.message.delete()
+    elif query.data == 'tips':
+        await query.answer("ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛɪɴɢ ꜰᴏʀᴍᴀᴛ\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ »» ᴛʏᴩᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ »» ᴄᴏᴩʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ »» ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴩ\n\nᴇxᴀᴍᴩʟᴇ : ᴋɪɴɢ ʟɪᴀʀ ᴏʀ ᴋᴜɴɢ ʟɪᴀʀ 2018\n\nメ ᴅᴏɴᴛ ᴜꜱᴇ ➜ !:(!;/)-_.)\n\n© ᴍᴛɢ ᴍᴏᴠɪᴇ ʙᴏᴛ", True)
+    elif query.data == 'mtg':
+        await query.answer("⚠️ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠️\n.......................................\n\nᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴀꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ.\n\nɪғ ʏᴏᴜ ᴅᴏ ɴᴏᴛ sᴇᴇ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ/sᴇʀɪᴇs ғɪʟᴇ, ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ɴᴇxᴛ ᴘᴀɢᴇ 🤗", True)
+    elif query.data == 'pk':
+        await query.answer("ꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ❥︎ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ❥︎ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ❥︎ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴩ\n\nᴇxᴀᴍᴩʟᴇ : sᴛʀᴀɴɢᴇʀ ᴛʜɪɴɢᴅ or sᴛʀᴀɴɢᴇʀ ᴛʜɪɴɢs S01E1\n\nメ ᴅᴏɴᴛ ᴜꜱᴇ ➜ !:(!;/)-_.)\n\n©️ ᴍᴛɢ ᴍᴏᴠɪᴇ ʙᴏᴛ", True)
+    elif query.data == 'contact':
+        await query.answer("𝘿𝙊𝙉'𝙏 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙈𝙀 \n 𝙄𝘼𝙈 𝙎𝙋𝘼𝙈 𝙔𝙊𝙐 𝙁𝙊𝙍𝙀𝙑𝙀𝙍 👑", True)
 
 
 async def auto_filter(client, msg, spoll=False):
